@@ -1,4 +1,4 @@
-# Experiment--01-Experiment-1-8086-Architecture-and-Register-Operations
+# Experiment--02-Experiment-1-8086-Architecture-and-Register-Operations
  
 ## Aim
 
