@@ -1,5 +1,5 @@
 # Experiment--02-Experiment-1-8086-Architecture-and-Register-Operations
- 
+
 ## Aim
 
 To study the architecture of the 8086 microprocessor and write assembly
@@ -133,7 +133,6 @@ MAIN PROC
 MAIN ENDP
 END MAIN
 ```
-
 ### Expected Result
 
 -   AX = `1234H`
@@ -146,7 +145,6 @@ END MAIN
 AX. `MOV RESULT, BX` stores the contents of BX in the 16-bit memory
 variable `RESULT`. The `MOV` instruction does not modify the source
 operand.
-
 ------------------------------------------------------------------------
 
 ## Part (c): Exchange Two 16-bit Memory Locations Using Registers
@@ -204,7 +202,9 @@ END START
 
 ### Explanation
 
-  
+  • .DATA: Tells the computer to allocate space in the RAM. We create two 16-bit boxes (DW stands for Define Word, which means 16 bits): VALUE1 holding 1111H and VALUE2 holding 2222H.
+• MOV AX, @DATA & MOV DS, AX: The CPU needs to know where in the RAM your variables are located. This initializes the Data Segment (DS) register so the program can find VALUE1 and VALUE2.
+
 ------------------------------------------------------------------------
 
 ## Procedure
@@ -227,7 +227,6 @@ The 8086 architecture and the functions of the BIU and EU were studied.
 The assembly programs demonstrate 16-bit register transfer with memory
 storage and the exchange of two 16-bit memory values.
 
-
 ## Viva Voce Questions
 
 1.  What is the function of the BIU in the 8086?
@@ -238,6 +237,3 @@ storage and the exchange of two 16-bit memory values.
 6.  Does the `MOV` instruction change the source operand?
 7.  Why are registers used when exchanging two memory values?
 8.  What is the purpose of the DS segment register?
-
- 
-` 
